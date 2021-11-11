@@ -1,0 +1,427 @@
+*, *:before, *:after {box-sizing: border-box; padding: 0; margin: 0;}
+html{
+    color:#555;
+    font-size: 20px;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+.header{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(Omnifood-Contents/hero.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    min-width: 1000px;
+}
+.list{
+    border: 40px solid transparent;
+    font-weight: 200;   
+}
+.navigation{
+    list-style-type:none;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    justify-content: flex-end;
+    background-image: url(Omnifood-Contents/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 15%;
+}
+
+.list:link, .list:visited{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.list:hover{
+    text-decoration: underline;
+    text-decoration-color: #e67e22;
+}
+
+.hero-text-box{
+    text-transform: uppercase;
+    color: white;
+    width: 80%;
+}
+.float-text{
+    display: flex;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+.float-btn1, .float-btn2{
+    display: flex;
+}
+.float-btn1{
+    margin-left: 15%;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 100;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+}
+.btn:hover, .btn:active{
+    background-color:#cf6d17;
+}
+.btn-full{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: white;
+}
+.btn-ghost{
+    border:1px solid;
+    color:#e67e22;
+    transition: color 0.2s;
+}
+.btn-full:hover, .btn-full:active{
+    border: 1px solid #cf6d17;
+}
+.btn-ghost:hover, .btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: white;
+}
+
+/* Section 1, Food fast not fast food */
+.section1Header{
+    margin-top: 75px;
+    text-align: center;
+    font-weight: 350;
+    font-size: 40;
+    text-transform: uppercase;
+}
+.icon{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+    --ionicon-stroke-width: 20px;
+}
+.section1Table{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 75px;
+}
+.section1td{
+    padding-right: 5%;
+    
+}
+
+.photo{
+    height: auto;
+    float: left;
+    width:25%;
+    overflow:hidden;
+    background-color: black;
+}
+.photo img{
+    width: 100%;
+    opacity: 0.7;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/*Section 2 How it works*/
+.howitworks{
+    background-color: whitesmoke;
+}
+.section2header{
+    clear: both;
+    padding-top: 80;
+    text-align: center;
+    font-weight: 350;
+    font-size: 40;
+    text-transform: uppercase;
+}
+.section2phone{
+    float: left;
+    margin-left: 25%;
+    margin-right: 5%;
+    margin-bottom: 80px;
+}
+.section2body{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.number{
+    float: left;
+    margin-top: 50px;
+    color: #e67e22;
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+}
+.section2text{
+    margin-top: 50px;
+    margin-left: 15%;
+    font-weight: 300;
+    font-size: 20;
+}
+
+/*Section 3 We're in these Cities*/
+.section3header{
+    clear: both;
+    padding-top: 80;
+    text-align: center;
+    font-weight: 350;
+    font-size: 40;
+    text-transform: uppercase;
+}
+.twitter:link{
+    color: #e67e22;
+    font-weight: 300;
+}
+.twitter:visited{
+    color: #e67e22;
+    font-weight: 300;
+}
+.twitter:hover{
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.twit:hover{
+    font-size: 100%;
+    display: block;
+    color: rgb(29, 161, 242);
+    margin-bottom: 10px;
+    --ionicon-stroke-width: 20px;
+    transition: color 0.5s;
+}
+.icon2{
+    font-size: 100%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+    --ionicon-stroke-width: 20px;
+}
+.citiesParent{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.city{
+    display: flex;
+    width: 16%;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.cityphoto{
+    overflow: hidden;
+
+}
+.cityname{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 25;
+}
+.cityicons{
+    font-weight: 300;
+    font-size: 20;
+}
+
+/*Section 4 Our customers can't live without us*/
+.quotes{
+background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(Omnifood-Contents/back-customers.jpg);
+    background-size: cover;
+    height: 75vh;
+    background-attachment: fixed;
+}
+.section4header{
+    color: white;
+    clear: both;
+    padding-top: 80;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 350;
+    font-size: 40;
+    text-transform: uppercase;
+}
+.quotesParent{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.quote1{
+    width: 25%;
+    font-weight: 300;
+    font-style: italic;
+    margin-right: 2%;
+}
+.quoteIcon{
+    font-size: 150;
+    height: 100;
+}
+.person{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+/*Section 5 Start eating healthy today*/
+.section5{
+    background-color: whitesmoke;
+}
+.section5header{
+    clear: both;
+    padding-top: 80;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 350;
+    font-size: 40;
+    text-transform: uppercase;
+}
+.optionsParent{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.box{
+    width: 25%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+    box-shadow: 0 2px 2px #cac5c5;
+}
+.included{
+    font-size: 24;
+    font-weight: 270;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px;
+}
+.signup{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+}
+.price{
+    padding: 15px;
+}
+
+/* section 6 we're happy to hear from you*/
+.section6header{
+    clear: both;
+    padding-top: 80;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 350;
+    font-size: 40;
+    text-transform: uppercase;
+}
+.label{
+    position: absolute;
+    left: 25%;
+    font-size: 20;
+    font-weight: 300;
+}
+.option{
+    position: absolute;
+    left: 42%;
+}
+.text{
+    height: 40px;
+    width: 30%;
+    padding: 7;
+    font-size: 20;
+}
+.Reviewlist{
+    margin-bottom: 25px;
+}
+.sendit{
+    margin-top: 20px;
+    margin-left: 42%;
+    font-size: 20;
+}
+
+/* footer */
+.footerstyle{
+    height: 220px;
+    background-color: rgb(69, 69, 69);
+}
+.leftParent{
+    display: flex;
+    width: 600;
+    position: relative;
+    left: 13%;
+    bottom: -25%;
+}
+
+.footerLink:visited{
+    text-decoration: none;
+    color: gray;
+}
+.footerLink:link{
+    text-decoration: none;
+}
+.footerLink:hover{
+    color: white;
+    transition: color 0.5s;
+}
+.item{
+    color: grey;
+    padding-right: 5%;
+    font-weight: 300;
+}
+.footerText{
+    color: gray;
+    text-align: center;
+    position: relative;
+    top: 45%;
+    font-weight: 300;
+}
+.facebookFooter:hover{
+    color: #4267B2;
+}
+.twitterFooter:hover{
+    color:rgb(29, 161, 242)
+}
+.googleFooter:hover{
+    color: #db3236;
+}
+.instagramFooter:hover{
+    color: #8a3ab9;
+}
+.footerIconDesign{
+    font-size: 150%;
+    display: block;
+    color: grey;
+    margin-bottom: 10px;
+    --ionicon-stroke-width: 20px;
+    transition: color 0.5s;
+}
+.iconParent{
+    display:flex;
+    position:relative;
+    left: 75%;
+    bottom: 0%;
+    width: 200px;
+}
+.iconChild{
+    padding-right: 10%;
+    font-weight: 300;
+
+}
